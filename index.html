@@ -7,7 +7,7 @@
     <title>Olga's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merienda:wght@600&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -39,16 +39,25 @@
       <div class="bg-image">
         <div class="navbar-wrapper">
           <div class="navbar container">
-            <img class="logo" src="./logo.png" alt="logo">
+            <div class="logo-wrapper">
+              <img class="logo" src="./logo.png" alt="logo">
+              <span class="logo-text-wrapper">
+                <span class="logo-text">Olga</span>
+                <span class="logo-text">Odincova</span>
+              </span>
+            </div>
             <ul class="navbar-list">
               <li class="navbar-list-item">
-                <a class="navbar-list-link" href="#welcome-section">About</a>
+                <a class="navbar-list-link" href="#about">About</a>
               </li>
               <li class="navbar-list-item">
-                <a class="navbar-list-link" href="#projects">Works</a>
+                <a class="navbar-list-link" href="#skills">Skills</a>
               </li>
               <li class="navbar-list-item">
-                <a class="navbar-list-link" href="#contacts">Contact</a>
+                <a class="navbar-list-link" href="#projects">Projects</a>
+              </li>
+              <li class="navbar-list-item">
+                <a class="navbar-list-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -66,12 +75,30 @@
         </div>
       </div>
       
-      <div class="bg-color">
-        
-        
-
+      <div class="bg-color">     
 
         <div class="main-menu">
+          <div class="about-container">
+            <div class="container">
+              <div class="about-section-wrapper">
+                <div class="about-section" id="about">
+                  <h2 class="about-title">About Me</h2>
+                  <p class="about-description"> <span class="hello-item">Hello world!</span> I am Olga Odincova, a Frond-End student at CodeAcademy. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quia eum id nostrum suscipit cumque impedit in dolorum quis error explicabo repellat repellendus voluptatum repudiandae amet, consequuntur ipsam totam, eos harum corporis quae exercitationem! Corrupti error doloribus porro deleniti blanditiis quia nam. Doloremque autem, quidem minima impedit, facilis hic porro laboriosam dolores et vero nulla voluptatum placeat facere, nemo sint commodi mollitia veniam? Esse velit obcaecati architecto veniam repudiandae vero?</p>
+                </div>
+                <div class="skills-section" id="skills">
+                  <h2 class="skills-title">My Skills</h2>
+                  <div class="skills-items-wrapper">
+                    <div class="skill-item"><span class="item-title">HTML</span></div>
+                    <div class="skill-item"><span class="item-title">CSS</span></div>
+                    <div class="skill-item"><span class="item-title">SCSS</span></div>
+                    <div class="skill-item"><span class="item-title">Bootstrap</span></div>
+                    <div class="skill-item"><span class="item-title">Responsive design</span></div>
+                     <div class="skill-item different"><span class="item-title different">Coming soon...</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="work-container-wrapper">
             <div class="container">
               <div id="projects" class="work-container">
@@ -126,22 +153,49 @@
                   </div>
                 </div>
               
-                <!-- <a class="button" id="profile-link" href="https://www.freecodecamp.org/fccd664e0de-553f-4466-87c3-3508a1c51dcb" target="_blank">Show all</a> -->
+                <a class="profile-button" href="https://github.com/olgaodc?tab=repositories" target="_blank">
+                  <span class="button-text">See more on GitHub</span>
+                  <img src="arrow.png" alt="arrow"> 
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- <div class="skils-section"></div> -->
           
-          <div class="section" id="contacts">
-            <h4 class="section-title">Let's work together</h4>
-            
+          <div class="contact-section-wrapper">
+            <div class="contact-section" id="contact">
+              <form action="mailto:olgaodincova@gmail.com" method="post" target="_blank">
+                <span class="form-title">Contact Me</span>
+                <div class="line"></div>
+                <input type="text" placeholder="Your name" name="firstname" id="fname">
+                <input type="text" placeholder="Your last name" name="lastname" id="lname">
+                <input type="email" placeholder="Your email" name="email" id="email">
+                <textarea name="message" id="message" placeholder="Write something..."  cols="30" rows="10"></textarea>
+                <input type="submit" value="Send">
+              </form>
+              <div class="contact-info">
+                <h4 class="contact-title">Let's work together</h4>
+                <p class="contact-description">I am always ready to consider your proposal. You can just write me. If you are not comfortable doing this though a website, then on the sidebar are the networks that can help you.</p>
+                <p class="contact-description">It is also important for me to hear your opinion and recommendations about my projects, this will help me improve my skills.</p>
+              </div>              
+            </div>
           </div>
         </div>
       </div>
       
-      <div class="footer">
-        <span class="footer-item">©2023 All Rights Reserved</span>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="footer">
+            <div class="logo-wrapper">
+              <img class="logo" src="./logo.png" alt="logo">
+              <span class="logo-text-wrapper">
+                <span class="logo-text">Olga</span>
+                <span class="logo-text">Odincova</span>
+              </span>
+            </div>
+            <span class="footer-item">©All Rights Reserved | 2023 github.com/olgaodc</span>
+          </div>
+        </div>
       </div>
       </div>
 
