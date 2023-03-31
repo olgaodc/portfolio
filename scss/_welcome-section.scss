@@ -1,0 +1,85 @@
+@use 'responsive';
+
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 100vh;
+
+    .portfolio-image {
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        display: block;
+        border-radius: 50%;
+        /* border: 1px solid #4a4848ed; */
+        box-shadow: 0px 0px 15px 0px rgba(113, 110, 108, 0.88);
+
+        @include responsive.sm {
+            width: 260px;
+            height: 260px;
+        }
+    }
+
+    .welcome-section-subtitle {
+        font-size: 24px;
+        color: #333333;
+        font-weight: 500;
+        text-align: center;
+        /* font-style: italic; */
+
+        &.top {
+            margin-top: 15px
+        }
+
+        &.bottom {
+            margin-bottom: 30px
+        }
+
+        .name {
+            // color: orange;
+            font-size: 26px;
+            font-weight: 600;
+        }
+    }
+
+    .welcome-section-title {
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        font-size: 46px;
+        color: #9966CC;;
+        /* text-shadow: 1px 1px 1px #4c4746; */
+        margin: 0;
+
+        @include responsive.sm {
+            font-size: 36px;
+        }
+    }
+
+    .button {
+        display: block;
+        max-width: 160px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px 20px;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: transparent;
+        border: 2px solid #333333;
+        cursor: pointer;
+        transition-property: color, border-color, margin-top, margin-bottom;  
+        transition-duration: 0.4s;
+
+        &:hover {
+            color: #659388;
+            border-color: #659388;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+}

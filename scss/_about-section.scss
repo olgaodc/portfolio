@@ -1,0 +1,131 @@
+@use 'responsive';
+
+.about-section-wrapper {
+    padding-top: 100px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+
+    @include responsive.md {
+        padding-left: 0;
+    }
+
+    @include responsive.sm {
+        padding-top: 30px;
+        row-gap: 70px;
+    }
+
+    .about-section {
+        padding-top: 30px;
+
+        .about-description {
+            margin-top: 0;
+            margin-bottom: 10px;
+            max-width: 740px;
+            font-size: 18px;
+            line-height: 130%;
+
+            &.journey {
+                position: relative;
+                z-index: 1;
+
+                &:after {
+                    position: absolute;
+                    display: inline-block;
+                    content: "{}";
+                    color: #bfceb7;
+                    transform: scale(7);
+                    rotate: 20deg;
+                    top: 10px;
+                    right: 120px;
+                    z-index: -1;
+                }
+            }
+
+            .hello-item {
+                color: #7400ff;
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .programming-item {
+                // margin-top: 10px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .skills-section {
+        .skills-items-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            @include responsive.md {
+                gap: 30px 20px;
+            }
+
+            .skill-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                background-color: white;
+                border-radius: 20px;
+                height: 150px;
+                width: 140px;
+                box-shadow: 0 3px 10px 3px rgb(0 0 0 / 0.19);
+                transition-property: margin-top, margin-bottom;  
+                transition-duration: 0.3s;
+
+                @include responsive.md {
+                    height: 120px;
+                    width: 110px;
+                }
+
+                .skill-icon {
+                    height: 80px;
+
+                    @include responsive.md {
+                        height: 50px;
+                    }
+                }
+
+                &:hover {
+                    margin-top: -20px;
+                    margin-bottom: 0;
+                }
+
+                // &:nth-of-type(odd) {
+                //     background-color: #659388;
+                // }
+
+                // &:nth-of-type(even) {
+                //     background-color: white;                    
+                // }
+
+                &.different {
+                    background-color: #c2bebe;
+                }
+
+                .item-title {
+                    text-align: center;
+                    color: #232323;
+                    font-size: 18px;
+                    font-weight: 500;
+
+                    @include responsive.md {
+                        font-size: 16px;
+                    }
+
+                    &.different {
+                        color: #ede5e5;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+@use 'responsive';
+
+.contact-section-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 130px 0 100px;
+
+    @include responsive.md {
+        padding: 100px 0 60px;
+    }
+
+    .contact-section {
+        width: 90%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+
+        @include responsive.md {
+            align-items: flex-start;
+            width: 100%;
+            flex-direction: column-reverse;
+            gap: 70px;
+        }
+
+        
+
+        form {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            @include responsive.md {
+                width: 60%;
+            }
+
+            @include responsive.sm {
+                width: 100%;
+            }
+
+            .form-title {
+                margin-bottom: 10px;
+                font-size: 36px;
+                color: #333333;
+                font-weight: 600;
+            }
+
+            .line {
+                display: inline-block;
+                width: 90px;
+                height: 3px;
+                background-color: orange;
+                position: absolute;
+                left: -20px;
+                top: 45px;
+
+                @include responsive.md {
+                    display: none;
+                }
+            }
+        }
+
+        .contact-info {
+            width: 55%;
+
+            @include responsive.md {
+                width: 100%;
+            }
+        
+            .contact-title {
+                margin: 0 0 20px;
+                font-size: 30px;
+                color: #333333;
+                font-weight: 600;
+        
+                &::after {
+                    content: '🚀';
+                    display: inline-block;
+                    height: 40px;
+                    transform: scale(0.92);
+                }
+            }
+        
+            .contact-description {
+                margin: 0;
+                font-size: 18px;
+                line-height: 130%;
+        
+                &:nth-of-type(1) {
+                    margin-bottom: 10px;
+                }
+            }
+            .contacts-list-wrapper {
+                display: none;
+
+                @include responsive.md {
+                    display: block;
+                }
+
+                .contacts-list {
+                    padding-left: 0;
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                    display: grid;
+                    grid-template-columns: repeat(4, 35px);
+                    column-gap: 12px;
+    
+                    .contact-item {
+                        list-style-type: none;
+    
+                        .contact-link {
+                            display: block;
+    
+                            .contact-icon {
+                                display: block;
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

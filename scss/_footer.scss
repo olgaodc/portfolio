@@ -1,0 +1,23 @@
+@use 'responsive';
+
+.footer-wrapper {
+    background-color: #222222;
+
+    .footer {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center; 
+
+        .footer-item {
+            font-size: 16px;
+            color: #777777;
+            font-weight: 200;
+            text-align: center;
+
+            @include responsive.sm {
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
