@@ -290,11 +290,12 @@ input[type=submit]:hover {
     position: fixed;
     right: -100%;
     top: 0;
-    gap: 10px;
+    gap: 15px;
     flex-direction: column;
-    padding: 40px 0 20px;
-    background-color: #659388;
-    width: 52%;
+    padding-top: 60px;
+    background-color: rgba(244, 241, 241, 0.8);
+    width: 60%;
+    height: 100svh;
     text-align: center;
     transition: 0.3s;
     z-index: 2;
@@ -308,9 +309,6 @@ input[type=submit]:hover {
   .navbar-wrapper .navbar .navbar-list .navbar-list-item .navbar-list-link {
     font-size: 14px;
     padding: 0;
-  }
-  .navbar-wrapper .navbar .navbar-list .navbar-list-item .navbar-list-link:hover {
-    color: #F4F1F1;
   }
   .navbar-wrapper .navbar .hamburger-menu {
     z-index: 3;
