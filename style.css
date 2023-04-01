@@ -316,6 +316,7 @@ input[type=submit]:hover {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  height: 100vh;
   height: 100svh;
 }
 #welcome-section .portfolio-image {
