@@ -115,7 +115,7 @@
                     margin-top: 10px;
                     margin-bottom: 0;
                     display: grid;
-                    grid-template-columns: repeat(3, 30px);
+                    grid-template-columns: repeat(3, 35px);
                     column-gap: 3px;
     
                     .contact-item {
@@ -126,8 +126,8 @@
     
                             .contact-icon {
                                 display: block;
-                                width: 30px;
-                                height: 30px;
+                                width: 35px;
+                                height: 35px;
                                 transition-property: fill;
                                 transition-duration: 0.3s;
                                 transition-timing-function: ease-in-out;

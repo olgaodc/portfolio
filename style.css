@@ -707,7 +707,7 @@ input[type=submit]:hover {
   margin-top: 10px;
   margin-bottom: 0;
   display: grid;
-  grid-template-columns: repeat(3, 30px);
+  grid-template-columns: repeat(3, 35px);
   -moz-column-gap: 3px;
        column-gap: 3px;
 }
@@ -719,8 +719,8 @@ input[type=submit]:hover {
 }
 .contact-section-wrapper .contact-section .contact-info .contacts-list-wrapper .contacts-list .contact-item .contact-link .contact-icon {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   transition-property: fill;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
