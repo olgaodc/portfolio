@@ -162,14 +162,10 @@
             }
 
             @include responsive.sm {
-                right: -15px;
-            }
-
-            @include responsive.xs {
-                right: 40%;
                 bottom: -50px;
             }
 
+    
             &:hover {
                 opacity: 0.8;
             }

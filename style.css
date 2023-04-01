@@ -803,12 +803,6 @@ input[type=submit]:hover {
 }
 @media screen and (max-width: 469px) {
   .contact-section-wrapper .contact-section .back-to-top-button {
-    right: -15px;
-  }
-}
-@media screen and (max-width: 290px) {
-  .contact-section-wrapper .contact-section .back-to-top-button {
-    right: 40%;
     bottom: -50px;
   }
 }
