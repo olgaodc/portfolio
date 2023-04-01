@@ -704,12 +704,12 @@ input[type=submit]:hover {
 }
 .contact-section-wrapper .contact-section .contact-info .contacts-list-wrapper .contacts-list {
   padding-left: 0;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 0;
   display: grid;
-  grid-template-columns: repeat(4, 35px);
-  -moz-column-gap: 12px;
-       column-gap: 12px;
+  grid-template-columns: repeat(3, 30px);
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 .contact-section-wrapper .contact-section .contact-info .contacts-list-wrapper .contacts-list .contact-item {
   list-style-type: none;
@@ -719,8 +719,8 @@ input[type=submit]:hover {
 }
 .contact-section-wrapper .contact-section .contact-info .contacts-list-wrapper .contacts-list .contact-item .contact-link .contact-icon {
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   transition-property: fill;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
