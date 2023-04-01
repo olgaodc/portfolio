@@ -15,9 +15,9 @@
             padding-left: 0;
             margin: 0;
 
-            @include responsive.md {
-                display: none;
-            }
+            // @include responsive.md {
+            //     display: none;
+            // }
 
             .navbar-list-item {
                 list-style-type: none;
@@ -40,7 +40,6 @@
             }
         }
 
-        // padaryt, kad veiktu!!!!!
         .hamburger-menu {
             cursor: pointer;
             display: none;
@@ -56,7 +55,92 @@
                 margin: 5px 0;
                 border-radius: 25px;
                 background-color: #333333;
+                transition: all 0.3s ease;
             }
         }
     }
 }
+
+@media(max-width: 660px) {
+    .navbar-wrapper {
+
+        .navbar {
+            
+            .navbar-list {
+                position: fixed;
+                right: -100%;
+                top: 0;
+                gap: 10px;
+                flex-direction: column;
+                padding: 40px 0 20px;
+                background-color: #659388;
+                width: 52%;
+                text-align: center;
+                transition: 0.3s;
+                z-index: 2;
+    
+                &.active {
+                    right: 0;
+                }
+    
+                .navbar-list-item {
+                    margin: 0;
+
+                    .navbar-list-link {
+                        font-size: 14px;
+                        padding: 0;
+
+                        &:hover {
+                            color: #F4F1F1;
+                        }
+                    }
+                }
+            }
+    
+            .hamburger-menu {
+                z-index: 3;
+                    
+                &.active {
+                    
+                    .hamburger-menu-line {
+    
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
+    
+                        &:nth-child(1) {
+                            transform: translateY(8px) rotate(45deg);
+                        }
+    
+                        &:nth-child(3) {
+                            transform: translateY(-8px) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+ 
+
+
+// .navbar-list {
+//     position: fixed;
+//     left: -100%;
+//     top: 70px;
+//     gap: 0;
+//     flex-direction: column;
+//     background-color: white;
+//     width: 100%;
+//     text-align: center;
+//     transition: 0.3s;
+
+//     &.active {
+//         left: 0;
+//     }
+
+//     .navbar-list-item {
+//         margin: 16px 0;
+
+//     }
+// }
