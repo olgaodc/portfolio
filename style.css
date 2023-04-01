@@ -708,8 +708,8 @@ input[type=submit]:hover {
   margin-bottom: 0;
   display: grid;
   grid-template-columns: repeat(3, 30px);
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
 }
 .contact-section-wrapper .contact-section .contact-info .contacts-list-wrapper .contacts-list .contact-item {
   list-style-type: none;
