@@ -35,13 +35,13 @@
                 content: "";
                 display: inline-block;
                 height: 4px;
-                width: 45px;
+                width: 40px;
                 background: #7400ff;
                 margin-left: 3px;
                 animation: blink 1s infinite;
 
                 @include responsive.md {
-                    width: 35px;
+                    width: 30px;
                     height: 3px;
                 }
 
