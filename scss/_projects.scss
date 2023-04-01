@@ -3,7 +3,7 @@
 .work-container-wrapper { 
     padding-top: 150px;
 
-    @include responsive.sm {
+    @include responsive.md {
         padding-top: 100px;
     }
 
@@ -13,8 +13,8 @@
         row-gap: 60px;
         justify-content: center; 
 
-        @include responsive.sm {
-            row-gap: 35px;
+        @include responsive.md {
+            row-gap: 30px;
         }
 
         .project-tile {
@@ -28,6 +28,7 @@
 
             @include responsive.md {
                 width: 100%;
+                font-size: 30px;
             }
 
             &::after {
@@ -56,9 +57,6 @@
             flex-wrap: wrap;
             row-gap: 130px;
 
-            @include responsive.sm {
-                row-gap: 70px;
-            }
 
             @include responsive.lg {
                 row-gap: 100px;
@@ -66,6 +64,7 @@
 
             @include responsive.md {
                 width: 100%;
+                row-gap: 60px;
             }
 
             .project-item {

@@ -18,13 +18,17 @@ body {
     margin-right: auto;
     padding: 0 60px;
 
+    @include responsive.md {
+        padding: 0 40px;
+    }
+
     @include responsive.sm {
         padding: 0 20px;
     }
 }
 
 .bg-image {
-    background-color: #FAFAFA;
+    background-color: #F4F1F1;
     background-image: url('./img/background-image.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,6 +72,11 @@ body {
     margin: 0 0 40px;
     font-size: 36px;
     color: #333333;
+
+    @include responsive.md {
+        margin: 0 0 30px;
+        font-size: 30px;
+    }
 }
 
 .about-title::before,

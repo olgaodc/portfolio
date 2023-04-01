@@ -9,11 +9,8 @@
 
     @include responsive.md {
         padding-left: 0;
-    }
-
-    @include responsive.sm {
-        padding-top: 30px;
-        row-gap: 70px;
+        padding-top: 50px;
+        row-gap: 60px;
     }
 
     .about-section {
@@ -26,6 +23,10 @@
             font-size: 18px;
             line-height: 130%;
 
+            @include responsive.md {
+                font-size: 16px;
+            }
+
             &.journey {
                 position: relative;
                 z-index: 1;
@@ -37,7 +38,7 @@
                     color: #bfceb7;
                     transform: scale(7);
                     rotate: 20deg;
-                    top: 10px;
+                    top: 34px;
                     right: 120px;
                     z-index: -1;
                 }
