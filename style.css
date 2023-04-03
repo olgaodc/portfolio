@@ -443,8 +443,8 @@ input[type=submit]:hover {
   background-color: transparent;
   border: 2px solid #333333;
   cursor: pointer;
-  transition-property: color, border-color, margin-top, margin-bottom;
-  transition-duration: 0.4s;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 @media screen and (max-width: 660px) {
   #welcome-section .button {
@@ -452,10 +452,12 @@ input[type=submit]:hover {
   }
 }
 #welcome-section .button:hover {
-  color: #659388;
-  border-color: #659388;
-  margin-top: 20px;
-  margin-bottom: 0;
+  max-width: 340px;
+  color: #ffffff;
+  background-color: #bfceb7;
+  border-color: #bfceb7;
+  padding: 15px 40px;
+  letter-spacing: 5px;
 }
 
 .work-container-wrapper {

@@ -75,7 +75,7 @@
             font-size: 38px;
         }
     }
-
+    
     .button {
         display: block;
         max-width: 160px;
@@ -88,19 +88,21 @@
         font-weight: 500;
         background-color: transparent;
         border: 2px solid #333333;
-        cursor: pointer;
-        transition-property: color, border-color, margin-top, margin-bottom;  
-        transition-duration: 0.4s;
+        cursor: pointer; 
+        transition-property: all;
+        transition-duration: 0.5s;
 
         @include responsive.md {
             font-size: 14px;
         }
 
         &:hover {
-            color: #659388;
-            border-color: #659388;
-            margin-top: 20px;
-            margin-bottom: 0;
+            max-width: 340px;
+            color: #ffffff;
+            background-color: #bfceb7;
+            border-color: #bfceb7;
+            padding: 15px 40px;
+            letter-spacing: 5px;
         }
     }
 }
