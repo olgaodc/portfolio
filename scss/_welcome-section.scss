@@ -77,8 +77,10 @@
     }
     
     .button {
-        display: block;
-        max-width: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 280px;
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
@@ -91,18 +93,33 @@
         cursor: pointer; 
         transition-property: all;
         transition-duration: 0.5s;
-
+        
         @include responsive.md {
             font-size: 14px;
         }
 
+        svg {
+            display: none;
+            width: 17px;
+            height: 17px;
+            fill: #ffffff;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+
+
         &:hover {
-            max-width: 340px;
+            gap: 15px;
             color: #ffffff;
             background-color: #bfceb7;
             border-color: #bfceb7;
             padding: 15px 40px;
             letter-spacing: 5px;
+            font-weight: 600;
+        }
+
+        &:hover svg {
+            display: block;
         }
     }
 }
