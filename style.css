@@ -602,6 +602,11 @@ input[type=submit]:hover {
   font-size: 24px;
   font-weight: 600;
 }
+.work-container-wrapper #projects .project-items-wrapper .project-item .project-info .project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
 .work-container-wrapper #projects .project-items-wrapper .project-item .project-info .project-stack .stack-item {
   display: inline-block;
   padding: 5px;
